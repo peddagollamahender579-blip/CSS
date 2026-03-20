@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+============================================================================================================================================================================================
+CSS -> Cascading Style Sheet
+----------------------------
+<head>
+<style>
+.clr{ -----------------------------------{This .clr is internal CSS}
+	color:red;
+or 	color:green;
+}
+
+
+</style>
+</head>
+<body>
+	<h1>CSS</h1>
+<ul>
+	<li>inline CSS</li>  For this inline Css we can use style as inline css
+	<li>internal CSS</li> For this internal Css we can use class as internal CSS { use this .extension like .Internal CSS in side the style in head tag }
+	<li>External CSS</li> This we need to create the outside of the html like create a folder like name.css
+</ul>
+
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+	<h2 style="color:red">This is inline CSS </h2>
+Note: if you want to add green color for this inline , it will take lot of time , so we need to add for each and every h2 tag so it will take lot of time. to avoid this we are using internal CSS.
+
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+	<h2 class="clr">This is internal CSS</h2>
+
+Here we can write class name as any thing like ex: 123,abc,xyz anything it is
+Note: if you want to change the color of the all 10 internal CSS, we need to go to internal CSS clr class and we can change from there, if we have multiple files we are unable to change the color of the multiple files that is the drawback. with this internal CSS
+
+
+	<h2> This is External CSS</h2>
+
+Note: for this external CSS we need to create a file as style.css instead of style we can use any name. 
+
+Note1: we need to communicate means we need to link that 2 files with link tag then only it will work other wise it will not reflect the changes.
+
+<link rel="stylesheet" href="style.css"/>
+
+i. Link tag - link tag will used to communicate between the one page to another page.
+
+This above link tag we can use for how many files actually we are using communication with we need to add for that much files.
+
+==>Mostly we will use external CSS for real time projects.
+
+CSS -> for css  comment we can use like this : /*  ----*/  ===> ctrl+?
+
+</body>
+------------------------------------------------------------------------------------------------------------------
+                                           Align Properties
+create a file named as align.html
+
+<head>
+</head>
+<body>
+	<h2 style="text-align: center;">Text Align Properties</h2>
+	<h2 style="text-align: center;">Text Align Properties</h2>
+	<h2 style="text-align: center;">Text Align Properties</h2>
+	<h2 style="text-align: center;">Text Align Properties</h2>
+	<h2 style="text-align: center;">Text Align Properties</h2>
+	<h2 style="text-align: center;">Text Align Properties</h2>
+	<h2 style="text-align: center;">Text Align Properties</h2>
+
+
+Note: by default it will print left side.(it is by default property)
+
+	<ul>
+		<li>Text left</li>
+		<li>Text right</li>
+		<li>Text center</li>
+		<li>Text justify</li>
+
+	</ul>
+
+	<h2>Text left</h2>
+	<h2 class="text-center">Text-center</h2>
+	<h2 class="text-center">Text-center</h2>
+	<h2 class="text-center">Text-center</h2>
+	<h2 class="text-center">Text-center</h2>
+	<h2 class="text-center">Text-center</h2>
+	<h2 class="text-center">Text-center</h2>
+
+
+Note: add this above class in style.css by [.extension]
+
+	<h2 class="text-right" >Text right</h2>
+
+Note: add this above class in style.css by [.extension]
+	
+
+	<h2>Text-justify</h2>
+
+<p class="text-justify">Lorem100 </p>
+
+Note1: Add this class name text-justify to that style.css 
+
+Note: if you set both the right and left side text with same alignment so use the text-justify
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                   FLOAT PROPERTIES
+<hr>
+<br>
+
+
+<h2 class="text-center">Float Properties</h2>
+
+<hr>
+
+<h2 class="float-left">Float left</h2>
+<h2 class="float-right">Float right</h2>
+
+Add both classes at style.css as float: left; float: right; =>use this format {Not text-align:right don't use this format}
+
+Note: float left and float right will be used for getting same text both left and right in same line , but text-left and text-right will be displayed in separate rowss but float-left and float-right will be displayed in same row.
+
+</body>
+-------------------------------------------------------------------------------------
+                           BOX MODEL.HTML
+Box Model: Box model having 4 properties they are margin, border, padding, text content
+order is 1.margin,2.border,3.padding,4.text-content.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h2 class="text-center">Box Model</h2>
+	<hr>
+	<div class="box-model">Lorem100</div>
+    <hr>
+</body>
+</html>
+
+style.css
+
+.box-model{
+		border: 10px solid red; 
+
+increase border thick ness with use => border:30px solid red;
+
+border thick ness it will come for 10px means(border  
+
+		margin:30px;
+ 
+Border outside occupy space is called as margin. 4sdies it will apply like top,bottom,left,right.
+		
+		padding:30px;
+
+Border inside occupy space is called padding. 4 sides it will apply like top,bottom,left,right.
+
+		text content:
+
+
+Margin: PX is pixel 
+
+margin:20px; (this 20px will apply for 4 sides)
+margin:20px 30px;(This 20px will apply for top & bottom, 30px will apply for left & right) 
+margin:20px 30px 40px;(20px =>top 30px =>left & right 40px =>bottom)
+margin:20px 30px 40px 50px;(it will work as clock wise direction top , right, bottom, left)
+
+Padding: Padding also same like margin 
+
+padding:20px; (this 20px will apply for 4 sides)
+padding:20px 30px;(This 20px will apply for top & bottom, 30px will apply for left & right) 
+padding:20px 30px 40px;(20px =>top 30px =>left & right 40px =>bottom)
+padding:20px 30px 40px 50px;(it will work as clock wise direction top , right, bottom, left)
+
+
+-----------------------------------------------------------------------------------29/12/2025-----------------------------------------------------------------------------------------------
+
+CSS Selectors:CSS selectors are used to "find" (or select) the HTML elements you want to style
+
+There are five types of CSS Selectors are there, they are:
+1.Id Selector (#)
+2.Class Selector(.)
+3.Tag Selector (Element)
+4.Group Selector(div,p,h1,h2)
+5.Universal Selector(*)
+
+Example:
+
+Before that create a css style sheet named as Selectors.css(use Link tag)
+
+#abc{
+	color:red;  {ID selector}
+}
+
+.aaa{
+	color:blue; {Class Selector}
+}
+
+h1{
+	color:red;{Tag selector}
+}
+div{
+	color:green;{Tag selector}
+}
+
+div h1{
+	color:blue;{Group selector}
+}
+
+.parent h1,p,div{
+	color: green.{Group Selector}
+}
+
+*{
+	color:red;{Universal Selector}
+}
+
+...................................................................................
+<body>
+	<h2 class="text-center">Selectors</h2>
+
+	<ul>
+	<li>Id Selector</li>     [ This is only one time we don't need to use id name as multiple times, only one time we need to use ID name ]
+	<li>Class Selector</li>
+	<li>Tag Selector</li>
+	<li>Group Selector</li>
+	<li>Universal Selector</li>
+	</ul>
+
+<hr>
+
+	<h2 id="abc">This is id selector </h2>
+	<h2 id="abc">This is id selector </h2>
+	<h2 id="abc">This is id selector </h2>
+
+	<h2 id="xyz">This is 2nd Id name </h2>
+
+from this above id's we have same name like "abc" , so when ever we use JavaScript it will unable to identify which id it is pointing towards that. 
+Note: for CSS part it will work fine, coming to JS it won't work . 
+Note1: we can use other name for ID name;
+
+<hr>
+
+	<h2 class="aaa">This is class</h2>
+
+	<div class="aaa">This is div tag</div>
+
+Note: for class we can use class name as  multiple times .
+
+<hr>
+
+	<h1>This is tag selector </h1>
+	<div>This is div tag</div>
+Note: we can use ul,ol,p, and all the tags we can use for tag selector.
+
+<hr>
+
+	<h2>This is Group Selector</h2>
+
+	<div>
+	<h1>This is group tag 1 </h1>
+	<h1>This is group tag 1 </h1>
+	<p>this is para tag</p>
+	</div>
+
+	<div class="parent">
+	<h1>This is group tag 1 </h1>
+	<h1>This is group tag 1 </h1>
+	<p>this is para tag</p>
+	<div>this is div tag</div>
+	</div>
+
+
+	<h1>This is group tag 2 </h1>
+	<h1>This is group tag 3 </h1>
+<hr>
+	<h2>Universal Selector</h2>
+
+	
+</body>
+
+...................................................................................Position Properties---------------
+create one Position.css  (use link tag)
+
+.p-static{
+	position:static;{Static Property}
+}
+
+.Box{                  
+	width:60px;    
+	height:60px;
+	background:color: red;
+	margin:5px;
+}
+
+.d-flex{
+	display:flex;
+}
+.p-absolute{
+	positon:absolute;
+	margin-top:10px;
+	margin-left:10px;
+	background-color: green;
+}
+.p-relative{
+		position:relative;
+		margin-top:5px;
+		margin-left:5px;
+}
+
+.p-fixed{
+	position:fixed;
+}
+
+.bg-Header{
+	background-color:blue;
+	padding: 5px;
+	color:white;
+}
+.p-
+{
+	position:sticky;
+	top:0px;
+}
+
+
+
+
+
+	<h2>Position Properites>/h2>
+	
+	<ul>	
+	<li>Static</li>
+	<li>Absolute</li>
+	<li>Relative</li>
+	<li>Fixed>/li>
+	<li>Sticky</li>
+	</ul>
+
+<hr>
+	<h2class="p-static">This is H2 tag</h2>
+
+<hr>
+
+	<h2>Absolute Positon</h2>
+
+	<div class="d-flex"> {d-flex is used for display the data in rows}
+	<div class="Box">1</div>
+	<div class="Box">2</div>
+	<div class="Box">3</div>
+	<div class="Box" p-absolute>4</div> {here 1 box will overlap by 4th box} when ever we are using this absolute it will depends to parent tag. 
+Note: move to parent place
+	<div class="Box">5</div>
+	</div>
+
+<hr>
+
+	<h2>Position Relative</h2>
+Note: Position Relative tag will not depends on parent tag.
+
+	<div class="d-flex"> {d-flex is used for display the data in rows}
+	<div class="Box">1</div>
+	<div class="Box">2</div>
+	<div class="Box">3</div>
+	<div class="Box" p-relative>4</div>
+	<div class="Box">5</div>
+	</div>
+<hr>
+	
+	<h3>Fixed Position property</h3>
+Note: we are using this fixed position for like whats app logo at the corner of the website is to fixed for that purpose we are using this fixed position.
+		
+	<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+<div class="box p-fixed">1</div>
+<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+<h2>This is heading tag 2</h2>
+
+<hr>
+
+<h3>Sticky Position Property</h3>
+
+<div class="bg-Header p-sticky">
+Note: for sticky top:0px is mandatory to use when ever you use this sticky property( Categorys )
+<h1>Header</h1>
+</div>
+============================================================================================================================================================================================
+============================================================================================================================================================================================
+Display Properties:
+--------------
+display.css
+
+.text-center{
+	text-align:center;
+}
+
+.box{
+	width:60px;
+	height:60px;
+	background-color:blue;
+	margin:10px;
+}
+.d-flex{
+	display:flex;
+}
+
+.d-none{
+	display:none;
+}
+
+.v-hidden{
+	visibility:hidden;
+}
+
+                   desktop and mobile 
+             Note: we can write multiple properties in @media screen 
+            -----------------------------------------------------
+
+.text-clr{
+	color:red;	
+} 
+
+@media screen and (max-width:600px){
+		.text-clr{
+		color:blue;
+}
+.d-none{
+	display:block;
+}
+}
+
+------------------------other display properties.CSS---------------
+.d-inline{
+	background-color:red;
+	color:white;
+	width:100px;
+	height:100px;
+	display:inline;
+}
+
+.d-block{
+	background-color:red;
+	color:white;
+	width:100px;
+	height:100px;
+	display:block;
+}
+
+
+.d-inline-block{
+
+	background-color:red;
+	color:white;
+	width:100px;
+	height:100px;
+	display:inline-block;
+
+}
+	
+.......................................................................
+<body>
+
+<h2>Display Properties</h2>
+<ul>
+<li>Display flex</li> it will convert block level tag to inline tag
+<li>Display None</li> [It will not occupy the space and it will not display the text] it will hide the block
+<li>Display block</li> it is opposite of none it will display the box.
+<li>visibility hidden</li>it will not display the text, but it will occupy the space.
+</ul>
+
+<hr>
+
+<h2 class="text-center text-clr">Display Properties</h2>
+
+<div class="d-flex">
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box v-hidden">3</div>
+
+<div class="box d-none">3</div>
+<div class="box">4</div>
+</div>
+
+
+<hr>
+<h2>we have some other properties in this Display properties</h2>
+
+<h2>display inline, inline-block, block</h2>
+
+Display Inline:
+-----------------
+Note: display inline is the default property {in this display inline height and width will not work, this properties will not work under this display inline}
+
+Display Inline-Block:
+--------------------
+
+it will display in the same row , 
+
+Display Block:
+--------------
+it will display in the next row, it will occupy he entire width. 
+
+
+ 
+
+<h3>Display inline</h3>
+
+<p>Lorem50 <span class="d-inline">Skillanic</span></p>
+
+<p>Lorem50 <span class="d-block">Skillanic</span></p>
+
+<p>Lorem50 <span class="d-inline-block">Skillanic</span></p>
+
+</body>
+
+===================================================================================          
+                                  JUSTIFY PROPERTIES
+                              ------------------------------
+
+justify.css
+
+.text-center{
+	text-align:center;
+}
+
+.box-1{
+	width:200px;
+	height:200px;
+	background-color:red;
+	margin:10px;
+}
+
+.d-flex{
+	display:flex;
+	flex-wrap: wrap; {used to print in next row, like first 3 images and next row again 3 images and next row again 3 images, }
+	justify-content: space-between;
+	justify-content: space-around;
+	justify-content: space-evenly
+}
+
+
+
+.container{
+	margin:0px 7%;
+
+}
+
+.grid-1{
+	border:1px solid red;
+	width:340px;
+	heigh:300px;
+	margin-bottom:20px; {this is for space between images }
+
+	
+}
+.d-flex{
+	display:flex;
+		justify-content: space-between;
+
+}
+
+
+
+.grid-1 img{
+	width:100%;
+	height:250px;
+}
+
+
+...........................................................................	
+
+<body>
+
+<h2 class="text-center">Justify properties </h2>
+
+<ul>
+<li> justify content space-between</li>[first box will display at first and last box will display a last and middle box will display at center.]
+
+<li> justify content space-around</li>[it will give space around each box ]
+
+<li> justify content space-evenly</li>[it will give space evenly(equally) ]
+</ul>
+
+<div class="d-flex">
+<div class="box-1">1</div>
+<div class="box-1">2</div>
+<div class="box-1">3</div>
+</div>
+
+
+before using this below code comment the above code:
+
+example:1
+<div class="container"> Note: container will give some space at left and right
+<p>Lorem100</p>
+</div>
+
+example:2
+
+<div class="container">
+<div class="d-flex">
+
+<div class="grid-1 text-center">
+<img src="give image"/>
+<h3>ReactJS</h3>
+</div>
+</div>
+
+<div class="grid-1">
+<img src="give image"/>
+<h3>ReactJS</h3>
+
+</div>
+
+<div class="grid-1">
+<img src="give image"/>
+<h3>ReactJS</h3>
+
+</div>
+</div>
+</div>
+</body>	
+===================================================================================
+===================================================================================
+
+COMBINATORS:
+------------
+
+<body>
+
+	<h2>Combinator </h2>
+	<ul>
+	<li>Descendant combinator () {only one space}</li>
+
+	<li>Child combinator (>)</li>
+{when ever if we have div(parent) ->h2(child) and another div(child>inside this another h2(this is sub child) then only applicable for parent tag only }
+
+	<li>Next sibling combinator(+) </li>
+{After closing Div it will be applicable }
+	<li> subsequent sibling combinator(~) {negation} </li>
+	</ul>
+
+
+	<div>
+	<h2>this is h2 tag </h2>
+	<p>this is para tag</p>
+	</div>
+<hr>
+	<div class="parent">
+	<h2>this is h2 tag</h2>
+	<p>this is para tag</h2>
+	</div>
+
+
+	<hr>
+	<br>
+	<h2>Descendant combinator </h2> {when eve we will use descendant combinator it will apply for both parent - child and as well as if we have child for that parent inside that child there is a sub child for also the color will be applicable }
+	<div class="abc">  This div is parent tag
+	<h2 >this is h2 tag 1</h2> This h2 is child tag 
+	<h2>this is h2 tag 2</h2>
+	</div>  this div is child tag
+		<div>  [Nested loop ]
+	             <h2 >this is h2 tag A1</h2> this h2 is sub child 
+	             <h2>this is h2 tag A2</h2>
+	                 </div>
+	<div>
+	<h2>This is h2 tag 11</h2>
+	<h2>This is h2 tag 12</h2>
+	</div>
+	
+	<p>Hello hi </p>when ever after closing div tag if we give p tag or others tags except h3 , the next sibling combinators will not apply so, if we want to add after closing the div tag we need to apply for h3 tags then we need to use subsequent sibling combinators.
+	<h3>this is h3 tag and  next sibling combinator </h3> 
+	
+	<h2>this is h2 tag 1</h2>
+	<h2>this is h2 tag 2</h2>
+
+	
+
+</body>
+
+
+<--------combinators.css  (use link tag) before that ------------>
+.text-center{
+	text-align:center;
+}
+
+.parent h2,p{
+	color:red;
+}
+
+.abc h2{
+	color:blue;
+}
+
+.abc>h2{
+	color:blue;
+}
+
+.abc+h3{      Note: after the closing of div tag it will be applicable ,
+	color:red;
+}
+
+.abc~h3{
+	color:indigo;
+}
+
+-------------------------------------P-Sudo(Classes) ------------------------------
+
+<body>
+
+<h2 class="text-center hover-text"> Psudo classes & psudo elements </h2>
+
+Note: for psudo class we need to : (single colon{:})
+Note; &nbsp; {for giving space while using anchor tag }
+
+<ul>
+
+<li> Active </li>  {by default anchor tag will give link as red color while clicking =>  if you want to change to another color , go and use active property}
+
+<li> visited </li>  {after clicking on link , it will change the color of the link like we have visited that website=> like that it will tell us by changing the color of the link }
+
+<li> link  </li> { by default it will give blue color for that link }
+
+<li> Hover </li>{when ever you are hover to that particular text the color need to be change }
+
+</ul>
+
+<hr>
+<br>
+
+	<div>
+	
+	<a href="">This is link </a>
+	<a href="justify.html">justify </a> for space &nbsp &nbsp
+	<a href="align.html"> align</a> &nbsp &nbsp
+	<a href="position.html"> position</a>
+<hr>
+
+	<div class="box">
+	
+	</div>
+
+
+
+<hr>
+<br>
+<hr>
+                ---------------------------psudo Elements -------------
+    <h2> Psudo Elements </h2>
+Note: for Psudo Elements use :: (use :: double colon while using any properties)
+
+
+<ul>
+
+	<li>  First Letter </li> {with out writing any class we can change color's}
+	<li> First Line </li>
+	<li> Before </li>
+	<li> After </li>
+	<li> Marker</li> {to change the bullets color in ul , use css like ::marker}
+	<li> Selection </li>{to change the background color use this selection}
+</ul>
+
+	<p>Lorem100</p>
+
+<br>
+
+	<h1>This is Heading tag  1</h1>
+
+
+
+
+
+
+
+
+</body>
+
+
+<----------Psudo classes and elements (use Link tag)---------->
+
+.text-center{
+	text-align:center;
+}
+
+a:active{
+	color:yellow;
+}
+
+a:hover{
+	color:red;
+}
+
+.hover-text:hover{
+	color:red;
+}
+
+.box{
+	width:100px;
+	height:100px;
+	background-color:red;
+}
+
+.box:hover{
+	background-color:green;
+	border-radius:50%; [this 50% will applicable for all side top,bottom,left,right]
+	border-radius:30px 50px; [30px will apply for top-left, bottom-right, 50px top-right, bottom-left ]
+
+	transition: 2s; [2s means 2 seconds ]
+
+}
+
+
+<------------------------->
+
+Psudo elements 
+
+p::first-letter{
+	color:red;
+	font-size:50px;
+}
+
+p::first-line{
+	color:red;
+}
+
+h1::before{
+	content:url(img path);
+}
+
+h1::after{
+	content:url(img path);
+}
+
+::marker{
+	color:red;
+}
+
+::selection{
+	background-color:red;
+	color:#ffff;
+}
+
+P::selection{
+	background-color:red; [add only for para tag go and use this property ]
+	color:#ffff;
+}
+
+
+
+---------------------------------------FORMS------------------------------
+
+
+<body>
+
+	<h2 class="text-center"> Form </h2>
+	
+	<div class="form-1">
+	      <form>
+	            <div>
+			<label>Name </label>
+			<input type=""text">
+	            </div>
+		     <div>
+			<label>Email  </label>
+			<input type=""email">
+	            </div>
+                      <div>
+			<label>Number </label>
+			<input type=""number">
+	            </div>
+		<div class="text-center">
+	<button class="btn-1 "> Submit </button>
+
+		</div>
+
+	       </form>
+</div>
+        
+
+
+</body>
+
+
+
+
+<--------------form.css(use link tag) ->
+
+.text-center{
+	text-align:center;
+}
+
+.form-1{
+	border:1px solid #ccc;	
+	width:30%;
+	padding:20px; (for inside)
+	margin:0px auto;
+}
+
+.form-1 div{
+	margin-bottom:20px;
+}
+
+.form-1 label{
+	width:150px;  [label is inline tag so width and height will not apply so ]
+	display:inline-block;
+}
+
+.btn-1{
+	background-color:green;
+	border:1px solid green;
+	color:#ffff;
+	padding:10px 30px;
+}
+
+<==================================================================Navigation Menu=================================================================================================>
+
+header.html create a file   {online exams website for reference}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="header.css">
+</head>
+<body>
+    	<h2>Navigation Menu create a file </h2>
+<hr>
+<br>
+
+	<h2 class="text-center">Header</h2>
+
+	<ul class="menu  bg-clr p-fixed">
+	<li><a href="" class="active">Home</a></li>
+	<li><a href="">About s</a></li>
+	<li><a href="">Courses</a></li>
+	<li><a href="">services</a></li>
+	<li><a href="">Blog</a></li>
+	<li><a href="">contact</a></li>
+	<li><a href="login.html">Login</a></li>   [create one page for login page login.html]
+	<li><a href="">Register</a></li>
+	</ul>
+	
+	<br>
+
+	<a href="">Link here </a>
+<br>
+<br>
+<br>
+
+	<img src="" z-index>
+
+</body>
+</html>
+
+
+
+------------------------CSS.navigation menu------------------	
+header.css by using link tag to html 
+
+.text-center{
+	text-align:center;
+}
+
+a{
+text-decoration:none;
+}
+
+.menu li a{
+	text-decoration:none;
+	font-size:20px;
+	padding:10px;
+}
+
+.menu li{
+	list-style-type:none;
+	margin:10px;(apply for all sides)
+}
+
+.menu{
+	display:flex;
+}
+
+.menu li a:hover{
+	background-color:blue;
+	color:#ffff;
+	padding:10px;
+	border-radius:15px 0px !important;
+}
+
+.menu li a.active{
+	background-color:blue;
+	color:#ffff;
+	padding:10px;
+	border-radius:0px 15px;
+}
+
+
+
+<==============================Overflow ==================>
+
+<div class="box">
+
+<lorem100>
+
+</div>
+
+
+<p>Lorem100 z-index</p>
+<p>Lorem100</p>
+<p>Lorem100</p>
+<p>Lorem100</p>
+<p>Lorem100</p>
+<p>Lorem100</p>
+
+
+<----------------overflow.css---------------->
+
+.box{
+	width:300px;
+	height:300px;
+	border:1px solid #ccc;
+	overflow:hidden;  =>it will hide the outside the content 
+	overflow:auto;  => it will display that overflow data in the border.we need to scroll for that . 
+
+
+
+<================Z-index (this is also a button)==============================>
+	
+z-index is higher it will display at top 
+z-index is lower it will display at bottom 
+ex : z-index:-999;
+
+Add image at top 
+
+
+some more content we need to write for this 
+
+<p>Lorem100</p>
+<p>Lorem100</p>
+<p>Lorem100</p>
+<p>Lorem100</p>
+<p>Lorem100</p>
+<p>Lorem100</p>
+
+
+<------------z-index.css------>
+
+.bg-clr{
+	background-color:red;
+	padding:10px;
+	
+}
+
+.p-fixed{
+	position:fixed;
+	width:100%;
+	z-index:-999;
+}
+
+<=============================Nth child(:) is also one of the psudo class used for even and odd and nth-child =============================>
+
+nthchild.html
+
+<body>
+
+<h2 class="nthchild">Nth child</h2>
+<ol>
+<li>list </li>
+<li>list </li>
+<li>list </li>
+<li>list </li>
+and so on give up to 50 lines of <li>list</li>
+
+</ol>
+
+
+
+
+</body>
+
+
+
+<---------------nthchild.css communicate with link tag------------------->
+.nthchild{
+text-align:center;
+}
+
+ol{
+color:red;
+}
+
+to get color for only even use this below css
+
+ol li:nth-child(even){
+color:red;
+}
+
+ol li:nth-child(odd){
+color:blue;
+}
+
+ol li:nth-child(3n){
+color:brown;
+}
+
+ol li:nth-child(10n+1){  it will apply for 1 line and after with it will calculate with 10+1 =11 right , so it will apply or 11 ,after that 21
+color:indianred;
+}
+
+.clr{
+color:red;
+}
+
+@media screen and (max-width:600px){   =>for mobile devices below 600px
+.clr{
+color:blue;
+}
+}
+
+
+<============================Grid (it will create 2 dimensional layout {we can create at a time with row wise an col wise at a time})==============>
+
+<============Flex ( it will create single dimensional layout{rowwise or column wise we can create not at a time}) ============>
+
+Flex Properties
+
+flex.html
+<h2>flex properties</h2>
+
+<ul>
+<li>Dispaly flex</li>
+<li>flex-direction row</li>  this is by default property
+<li>flex-direction column</li>
+<li>flex-direction row-reverse</li>
+<li>flex-direction column-reverse</li>
+</ul>
+
+<div class="d-flex">
+<div class="box-1">1</div>
+<div class="box-1">2</div>
+<div class="box-1">3</div>
+<div class="box-1">4</div>
+<div class="box-1">4</div>
+</div>
+
+
+
+<------------flex.css---------------->
+		
+		
+.box-1{
+width:50px;
+height:50px;
+background-color:green;
+padding:10px; or 
+margin:10px;
+}
+
+.d-flex{
+display:flex;
+flex-direction:row;
+flex-direction:row-reverse;
+}
+
+@media screen and (max-width:600px){
+.d-flex{
+display:flex;
+flex-direction:column;
+flex-direction:column-reverse;
+}}
+
+
+<---------interview question code of flex  vh-centerr ---------->
+
+create one hvcenter.html
+
+<body>
+
+<h2>horizontal-vertical center</h2>
+
+<div class="hv-center">
+<div class="box-hv"></div>
+</div>
+
+
+</body>
+
+
+
+----------hvcenter.css--------
+.box-hv{
+width:50px;
+height:50px;
+background-color:green;
+}
+
+.hv-center{
+
+display:flex;
+justify-content:center;  it will display in horizontal center
+align-items:center;   horizontal center it will display
+height:100vh; vh means viewport height that only it will calculate.
+
+
+<==============================================================================GRID.html========================================================================================================> 
+
+<body>
+
+<h2 class="text-center">This is Grid</h2>
+
+<div class="container">
+
+<p>Lorem100</p> after  getting left and right space by using container we can remove this para tag or else put this in comments
+
+<div class="grid-main"> 
+
+<div class="grid-1">1</div>
+<div class="grid-2">2</div>
+<div class="grid-3">3</div>
+<div class="grid-4">4</div>
+<div class="grid-5">5</div>
+<div class="grid-6">6</div>
+<div class="grid-7">7</div>
+<div class="grid-8">8</div>
+<div class="grid-9">9</div>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+
+
+<-----------------------Grid.css(communicate with .css)with link tag ---------------------------------------->
+
+.text-center{	
+	text-align:center;	
+}
+
+.container{
+margin:0px 7%;
+}
+
+.grid-main{
+border:2px solid #ccc;
+width:100%;
+height:400px;
+display:grid;
+grid-template-column:25% 25% 25% 25%;
+or 
+grid-template-column:1fr 1fr 1fr 1fr;(fr is frequency of unit)
+}
+
+grid-1{
+background-color:blue;
+grid-column-start:1;
+grid-column-end:3;
+grid-row-start:1;
+grid-row-end:3;
+}
+
+grid-2{
+background-color:red;
+}
+
+grid-3{
+background-color:green;
+grid-column-start:3;
+grid-column-end:5;
+grid-row-start:1;
+grid-row-end:3;
+}
+
+grid-4{
+background-color:yellow;
+}
+
+grid-5{
+background-color:black;
+}
+
+grid-6{
+background-color:purple;
+}
+
+grid-7{
+background-color:brown;
+}
+
+grid-8{
+background-color:pink;
+}
